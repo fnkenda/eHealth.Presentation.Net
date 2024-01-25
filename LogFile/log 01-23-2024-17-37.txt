@@ -1,0 +1,3 @@
+The action Details in Medecins controller started, event fired: OnActionExecuting
+The action Details in Medecins controller finished, event fired: OnActionExecuted
+The action Details in Medecins Controller has the following viewData : , event fired: OnResultExected

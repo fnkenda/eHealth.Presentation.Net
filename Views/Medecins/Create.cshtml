@@ -1,0 +1,27 @@
+﻿@using System.ComponentModel.DataAnnotations
+@model eHealth.Presentation.Models.Medecin
+
+<form method="post" action="Create" enctype="multipart/form-data">
+	<div asp-validation-summary="All"></div>
+	<div>
+		<div>
+			<label asp-for="Nom"></label>
+			<input asp-for="Nom" />
+		</div><br />
+
+		<div>
+			<label asp-for="Prenom"></label>
+			<input asp-for="Prenom" />
+		</div><br />
+
+		<div>
+			<label asp-for="Specialite"></label>
+			<input asp-for="Specialite" />
+		</div><br />
+
+		<div>
+			<button class="btn btn-primary" type="submit" value="Submit">Enregistrer le médecin</button>
+		</div>
+
+	</div>
+</form>

@@ -1,0 +1,20 @@
+﻿@model List<eHealth.Presentation.Models.Medecin>
+@{
+    ViewData["Title"] = "Médecins";
+}
+<h2>Gestion des médecins</h2>
+
+
+@foreach (var item in Model)
+{
+    <br />
+    @await Html.PartialAsync("_InfoMedecinPartialView",item)
+    <a asp-action="Details" asp-controller="Medecins" asp-route-id="@item.IdMedecin" class="btn btn-outline-primary">Voir le détail du médecin</a>
+    <a asp-action="Edit" asp-controller="Medecins" asp-route-id="@item.IdMedecin" class="btn btn-outline-primary">Editer le médecin</a>
+    <a asp-action="Supprimer" asp-controller="Medecins" asp-route-id="@item.IdMedecin" class="btn btn-outline-danger">Supprimer le médecin</a>
+    <br />
+}
+
+<br />
+<br />
+<a asp-action="Create" asp-controller="Medecins" class="btn btn-primary">Ajouter un médecin</a>

@@ -1,0 +1,36 @@
+﻿@model eHealth.Presentation.Models.Medecin
+@{
+    ViewData["Title"] = "Details médecin";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Médecin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(Model => Model.Nom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(Model => Model.Nom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(Model => Model.Prenom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(Model => Model.Prenom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(Model => Model.Specialite)
+        </dt>
+        <dd>
+            @Html.DisplayFor(Model => Model.Specialite)
+        </dd>
+
+    </dl>
+</div>
+ <div>
+    <a asp-action="Index" asp-controller="Medecins" >Back to List</a>
+</div>
+ 
