@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Florent\\Perso\\DevOps Engineer\\Logiciel\\Projects\\eHealth\\eHeath\\eHealth.Presentation\\eHealth.Presentation.csproj": {}
+    "/home/thierno/eHealth.Presentation.Net/eHealth.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Florent\\Perso\\DevOps Engineer\\Logiciel\\Projects\\eHealth\\eHeath\\eHealth.Presentation\\eHealth.Presentation.csproj": {
+    "/home/thierno/eHealth.Presentation.Net/eHealth.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Florent\\Perso\\DevOps Engineer\\Logiciel\\Projects\\eHealth\\eHeath\\eHealth.Presentation\\eHealth.Presentation.csproj",
+        "projectUniqueName": "/home/thierno/eHealth.Presentation.Net/eHealth.Presentation.csproj",
         "projectName": "eHealth.Presentation",
-        "projectPath": "C:\\Florent\\Perso\\DevOps Engineer\\Logiciel\\Projects\\eHealth\\eHeath\\eHealth.Presentation\\eHealth.Presentation.csproj",
-        "packagesPath": "C:\\Users\\fnken\\.nuget\\packages\\",
-        "outputPath": "C:\\Florent\\Perso\\DevOps Engineer\\Logiciel\\Projects\\eHealth\\eHeath\\eHealth.Presentation\\obj\\",
+        "projectPath": "/home/thierno/eHealth.Presentation.Net/eHealth.Presentation.csproj",
+        "packagesPath": "/home/thierno/.nuget/packages/",
+        "outputPath": "/home/thierno/eHealth.Presentation.Net/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\fnken\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/thierno/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
