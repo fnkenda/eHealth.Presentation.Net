@@ -50,7 +50,7 @@ namespace eHealth.Presentation.Services
         public async Task<Patient> SavePatient(Patient patient)
         {
             HttpResponseMessage response = await _httpClient.PostAsJsonAsync(
-                "/api/create", patient);
+				"/savePatientData", patient);
             response.EnsureSuccessStatusCode();
             return patient;
         }

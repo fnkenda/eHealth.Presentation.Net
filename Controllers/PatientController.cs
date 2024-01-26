@@ -28,9 +28,24 @@ namespace eHealth.Presentation.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Patient patient)
+        public async Task<IActionResult> Create(Patient patient)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                int nextPatientId = _patients.Max(p => p.idPatient) + 1;
+                await _patientService.SavePatient(
+                    new Patient
+                    {
+                        idPatient = nextPatientId,
+                        name = patient.name,
+                        eMail = patient.eMail,
+                        tel = patient.tel
+                    });
+                _patients = await _patientService.GetAll();
+                return RedirectToAction("Index");
+            }
+
+            return View(patient);
         }
     }
 }
