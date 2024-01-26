@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eHealth.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc4535fe853c9b919c45a1138ff6b543273f6200")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8404665fae06e12080d1b38a1478c47c815f9dcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("eHealth.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eHealth.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
