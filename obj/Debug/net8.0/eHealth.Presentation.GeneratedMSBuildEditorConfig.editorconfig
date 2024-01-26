@@ -17,67 +17,67 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = eHealth.Presentation
 build_property.RootNamespace = eHealth.Presentation
-build_property.ProjectDir = C:\Florent\Perso\DevOps Engineer\Logiciel\Projects\eHealth\eHeath\eHealth.Presentation\
+build_property.ProjectDir = D:\DB\documents\etudes_formation\23-24_formation_DevOps\lab_Sprint_eHealth\eHealth.Presentation.Net\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Florent\Perso\DevOps Engineer\Logiciel\Projects\eHealth\eHeath\eHealth.Presentation
+build_property.MSBuildProjectDirectory = D:\DB\documents\etudes_formation\23-24_formation_DevOps\lab_Sprint_eHealth\eHealth.Presentation.Net
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Home/Index.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Home/Privacy.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Medecins/Create.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Medecins/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkZWNpbnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Medecins/Details.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Medecins/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkZWNpbnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Medecins/Index.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Medecins/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkZWNpbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Medecins/Supprimer.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Medecins/Supprimer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkZWNpbnNcU3VwcHJpbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Medecins/_InfoMedecinPartialView.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Medecins/_InfoMedecinPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkZWNpbnNcX0luZm9NZWRlY2luUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Patient/Create.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Patient/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Patient/Index.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Shared/Error.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/_ViewImports.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/_ViewStart.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Florent/Perso/DevOps Engineer/Logiciel/Projects/eHealth/eHeath/eHealth.Presentation/Views/Shared/_Layout.cshtml]
+[D:/DB/Documents/etudes_formation/23-24_formation_DevOps/lab_Sprint_eHealth/eHealth.Presentation.Net/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-a5pnbtawg6
