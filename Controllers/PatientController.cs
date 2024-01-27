@@ -32,17 +32,8 @@ namespace eHealth.Presentation.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _patientService.SavePatient(patient);
-
-				//int nextPatientId = (_patients.Count == 0) ? 1 : _patients.Max(p => p.idPatient) + 1;
-    //            await _patientService.SavePatient(
-    //                new Patient
-    //                {
-    //                    idPatient = nextPatientId,
-    //                    name = patient.name,
-    //                    eMail = patient.eMail,
-    //                    tel = patient.tel
-    //                });
+                patient.idPatient = (_patients.Count == 0) ? 1 : _patients.Max(p => p.idPatient) + 1;
+				await _patientService.SavePatient(patient);
 
                 _patients = await _patientService.GetAll();
                 return RedirectToAction("Index");
