@@ -10,6 +10,8 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddScoped<IMedecinsService, MedecinsService>();
 
+builder.Services.AddScoped<ICliniqueService, CliniqueService>();
+
 builder.Services.AddScoped<IPatientService, PatientService>();
 
 builder.Services.AddScoped<LogActionFilterAttribute>();

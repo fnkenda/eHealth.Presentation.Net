@@ -1,0 +1,16 @@
+﻿@model List<Clinique>
+
+<h2>Liste des cliniques</h2>
+
+@{
+	foreach (var clinique in Model)
+	{
+		<p>
+			@clinique.Nom
+			@clinique.Adresse
+			@clinique.Telephone
+		</p>
+	}
+	<br />
+	<a asp-action="Create" asp-controller="Clinique" class="btn btn-primary">Ajouter une nouvelle clinique</a>
+}
