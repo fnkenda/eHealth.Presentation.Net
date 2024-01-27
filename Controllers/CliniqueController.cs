@@ -41,7 +41,7 @@ namespace eHealth.Presentation.Controllers
 				await _cliniqueService.CreateClinique(clinique);
 
 				_cliniques = await _cliniqueService.GetCliniques();
-				RedirectToAction("Index");
+				return RedirectToAction("Index");
 			}
 			return View(clinique);
 		}

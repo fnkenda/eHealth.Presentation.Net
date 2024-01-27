@@ -3,14 +3,27 @@
 <h2>Liste des cliniques</h2>
 
 @{
-	foreach (var clinique in Model)
-	{
-		<p>
-			@clinique.Nom
-			@clinique.Adresse
-			@clinique.Telephone
-		</p>
-	}
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Nom</th>
+				<th scope="col">Adresse</th>
+				<th scope="col">Téléphone</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var clinique in Model)
+			{
+				<tr>
+					<th scope="row">@clinique.IdClinique</th>
+					<td>@clinique.Nom</td>
+					<td>@clinique.Adresse</td>
+					<td>@clinique.Telephone</td>
+				</tr>
+			}
+		</tbody>
+	</table>
 	<br />
 	<a asp-action="Create" asp-controller="Clinique" class="btn btn-primary">Ajouter une nouvelle clinique</a>
 }
