@@ -64,20 +64,15 @@ namespace eHealth.Presentation.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Create(Medecin medecin)
+		public async Task<IActionResult> Create(Medecin medecin)
 		{
 			if (ModelState.IsValid)
 			{
 
-				int _medecinsId = _medecins.Max(m => m.IdMedecin) + 1;
-                _medecinsService.CreateMedecin(new Medecin
-				{
-					IdMedecin = _medecinsId,
-					Nom = medecin.Nom,
-					Prenom = medecin.Prenom,
-					Specialite = medecin.Specialite,
-				});
-                _medecins = _medecinsService.GetMedecins().Result;
+				await _medecinsService.CreateMedecin(medecin);
+
+
+                _medecins = await _medecinsService.GetMedecins();
                 return RedirectToAction("Index");
 			}
 			return View(medecin);
