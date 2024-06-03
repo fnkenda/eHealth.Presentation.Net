@@ -39,6 +39,7 @@ pipeline {
         }
 
          stage("Email Notification") {
+            agent any
             steps {
                 //echo 'Sending EMail notification started ...'
 
