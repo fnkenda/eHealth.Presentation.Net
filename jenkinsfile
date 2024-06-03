@@ -1,0 +1,57 @@
+pipeline {
+    agent {label "dev"}
+    stages {
+        stage("Build") {
+            steps {
+                echo "Build Started"
+                
+                sh 'dotnet build eHealth.Presentation.csproj' 
+
+                echo "Build Finished"
+            }
+        }
+
+        stage("Docker build") {
+            steps {
+                echo "Buidling ehealth presentation MVC dotnet Core docker image"
+
+                sh 'sudo docker build -t ddragueur/ehealth:presentation .'
+
+                echo 'Buidling ehealth presentation MVC dotnet Core docker image Finished'
+            }
+        }
+
+        stage("Docker hub push image") {
+            steps {
+                withCredentials([usernamePassword( credentialsId: 'DockerCredentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                    
+                    echo "Buidling Patient API Java docker image"
+
+                    sh 'sudo docker login -u ${USERNAME} -p ${PASSWORD}'
+
+                    sh 'sudo docker push ddragueur/ehealth:presentation'
+
+                    echo 'Docker hub push image Finished'
+
+                }
+            }
+        }
+
+        // stage("Deploy ehealth on Uat") {
+        //     agent {label "uat"}
+        //     withCredentials([usernamePassword( credentialsId: 'DockerCredentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')])
+        //     steps {
+        //         echo "Deploying ehealth on UAT"
+
+        //         sh 'sudo docker login -u ${USERNAME} -p ${PASSWORD}'
+
+        //         sh 'sudo docker network create eHealthNet'
+
+        //         sh 'sudo docker compose up -d'
+
+        //         echo "Deploying ehealth on UAT Finished"
+        //     }
+        // }
+
+    }
+}
