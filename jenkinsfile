@@ -42,9 +42,10 @@ pipeline {
             steps {
                 //echo 'Sending EMail notification started ...'
 
-                emailext body: 'eHealth Presentation MVC can be validated before deployment',
+                body: 'eHealth Presentation MVC can be validated before deployment',
                 subject: 'eHealth Presentation',
-                to: 'florent.nkenda@',
+                to: 'florent.nkenda@gmail.com'
+                
 
                 //echo 'Sending EMail notification finished ...'
             }
