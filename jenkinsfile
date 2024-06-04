@@ -74,7 +74,7 @@ pipeline {
 
      post {
             always{
-                emailext(body: 'eHealth Presention doit être valider avant déploiement ', subject: 'eHealth Presentation MVC ', to: 'florent.nkenda@gmail.com', from: 'dredger.dragueur@gmal.com', replyTo: 'dredger.dragueur@gmal.com', mimeType: 'text/html')
+                emailext(body: 'eHealth Presention doit être valider avant déploiement ', subject: 'eHealth Presentation MVC ', to: 'florent.nkenda@gmail.com', from: 'dredger.dragueur@gmal.com', replyTo: 'dredger.dragueur@gmal.com', mimeType: 'text/plain')
             }
         }
 }
