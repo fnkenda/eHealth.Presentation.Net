@@ -37,12 +37,6 @@ pipeline {
             }
         }
 
-        post {
-            always{
-                emailext(body: 'eHealth Presention doit être valider avant déploiement ', subject: 'eHealth Presentation MVC ', to: 'florent.nkenda@gmail.com')
-            }
-        }
-
 
         // stage("Email Notification") {
         //     // agent any
@@ -77,4 +71,10 @@ pipeline {
         // }
 
     }
+
+     post {
+            always{
+                emailext(body: 'eHealth Presention doit être valider avant déploiement ', subject: 'eHealth Presentation MVC ', to: 'florent.nkenda@gmail.com')
+            }
+        }
 }
