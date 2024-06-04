@@ -1,6 +1,5 @@
 pipeline {
     agent {label "dev"}
-
     stages {
         stage("Build") {
             steps {
@@ -38,30 +37,42 @@ pipeline {
             }
         }
 
-         stage("Email Notification") {
-            agent any
-            steps {
-                //echo 'Sending EMail notification started ...'
-
-                emailext body: 'eHealth Presention doit être valider avant déploiement ', subject: 'eHealth Presentation MVC ', to: 'florent.nkenda@gmail.com'
-
-                //echo 'Sending EMail notification finished ...'
+        post {
+            always{
+                emailext(body: 'eHealth Presention doit être valider avant déploiement ', subject: 'eHealth Presentation MVC ', to: 'florent.nkenda@gmail.com')
             }
         }
 
+
+        // stage("Email Notification") {
+        //     // agent any
+        //     steps {
+        //         //echo 'Sending EMail notification started ...'
+
+        //         emailext body: 'eHealth Presention doit être valider avant déploiement ', subject: 'eHealth Presentation MVC ', to: 'florent.nkenda@gmail.com'
+
+        //         //echo 'Sending EMail notification finished ...'
+        //     }
+        // }
+
+
+
+
         // stage("Deploy ehealth on Uat") {
         //     agent {label "uat"}
-        //     withCredentials([usernamePassword( credentialsId: 'DockerCredentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')])
+        
         //     steps {
-        //         echo "Deploying ehealth on UAT"
+        //          withCredentials([usernamePassword( credentialsId: 'DockerCredentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+        //            echo "Deploying ehealth on UAT"
 
-        //         sh 'sudo docker login -u ${USERNAME} -p ${PASSWORD}'
+        //            sh 'sudo docker login -u ${USERNAME} -p ${PASSWORD}'
 
-        //         sh 'sudo docker network create eHealthNet'
+        //            sh 'sudo docker network create eHealthNet'
 
-        //         sh 'sudo docker compose up -d'
+        //            sh 'sudo docker compose up -d'
 
-        //         echo "Deploying ehealth on UAT Finished"
+        //            echo "Deploying ehealth on UAT Finished" 
+        //          }
         //     }
         // }
 
